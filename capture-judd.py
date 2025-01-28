@@ -121,6 +121,7 @@ while not stop_script:
     display_frame = cv2.rotate(display_frame, cv2.ROTATE_180)
    # display_frame = frame1
     record_frame = frame1.copy()
+    record_frame = cv2.rotate(record_frame, cv2.ROTATE_180)
 
     frame_rgb = cv2.cvtColor(display_frame, cv2.COLOR_BGR2RGB)
     frame_resized = cv2.resize(frame_rgb, (width, height))
